@@ -115,7 +115,7 @@
 
 @media (max-width: 480px) {
     .cajaPerfil {
-        min-height: auto;
+        min-height: 500px;
     }
     
     .imgPerfil {
@@ -124,7 +124,7 @@
     }
     
     .nombrePerfil {
-        margin-top: 5rem;
+  
         font-size: clamp(1.8rem, 7vw, 2.5rem);
     }
     
