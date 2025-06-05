@@ -1,6 +1,9 @@
 .section{
     width: 100%;
-      background: linear-gradient(to bottom, #2e1b47, #1a1a2e, #0c0c14);
-    height: 120rem;
+    height: 100%;
     padding:12rem 0 0 0;
+    
 }
+
+
+
