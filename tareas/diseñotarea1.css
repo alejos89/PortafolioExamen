@@ -1,42 +1,5 @@
-.contenedorTareas {
-    display: grid;
+.cajaTarea{
+    height: 60rem;
     width: 100%;
-    height: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1.8rem;
-    padding: 2rem 1rem;   
-}
-
-.cajaTarea1 {
-    background-color: rgba(43, 41, 44, 0.678);
-    border-radius: 2rem;
-    overflow: hidden; /* Asegura que la imagen no sobresalga del borde */
-}
-
-.imagenesTareas {
-    width: 100%;
-    height: 100%; /* Ocupa toda la altura del contenedor */
-    object-fit: cover; /* Cubre todo el espacio manteniendo proporciones */
-    display: block; /* Elimina espacio inferior de imágenes inline */
-    border-radius: 1rem; /* Conserva el redondeo original */
-    box-shadow: 0 6px 20px rgb(3, 3, 3);
-}
-
-@media (max-width: 768px) {
-    .contenedorTareas {
-        gap: 1.2rem;
-        padding: 1.5rem 0.8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .contenedorTareas {
-        gap: 0.8rem;
-        padding: 1rem 0.5rem;
-    }
-    
-    .cajaTarea1 {
-        border-radius: 1.5rem;
-    }
+ 
 }
