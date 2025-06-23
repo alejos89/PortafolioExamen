@@ -125,12 +125,12 @@ body{
     
     .imgPerfil {
         width: 65%;
-        bottom: calc(100% - 120px);
+     
     }
     
     .nombrePerfil {
   
-        font-size: clamp(1.8rem, 7vw, 2.5rem);
+        font-size: clamp(2.5rem, 7vw, 2.5rem);
     }
     
     .apartadoInfo {

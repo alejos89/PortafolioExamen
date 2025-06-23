@@ -1,0 +1,98 @@
+.contenedorImagenes {
+  display: grid;
+  width: auto;
+  height: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1.8rem;
+  padding: 2rem 1rem;
+}
+
+.imagen1 {
+  grid-column: 1/3;
+  background: radial-gradient(circle at top center, #F8F9FA, #E9ECEF90, #DEE2E68e, #ADB5BD80);
+}
+
+.imagen2 {
+  background: radial-gradient(circle at top center, #2965F190, #33A9DC8e);
+}
+
+.imagen3 {
+  grid-column: 1/4;
+  background: radial-gradient(circle at top center, #E34F26aa, #F0652980);
+}
+
+.imagen4 {
+  grid-column: 1/3;
+  background: radial-gradient(circle at top center, #A259FF80, #1ABCFE8e);
+}
+
+.imagen5 {
+  background: radial-gradient(circle at top center, #E95420aa, #77216F90);
+}
+
+.cajaTarea2 {
+  border-radius: 2rem;
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.imagenesTareas2 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .contenedorImagenes {
+    gap: 1.2rem;
+    padding: 1.5rem 0.8rem;
+  }
+  
+  .cajaTarea2 {
+    height: 14rem;
+    border-radius: 1.8rem;
+    padding: 0.8rem;
+  }
+
+  .imagenesTareas2 {
+    height: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedorImagenes {
+    gap: 0.8rem;
+    padding: 1rem 0.5rem;
+  }
+  
+  .cajaTarea2 {
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    height: 10rem;
+  }
+
+  .imagen3 {
+    grid-column: 1/4;
+  }
+  
+  .imagen1, .imagen4 {
+    grid-column: 1/3;
+  }
+
+  .imagenesTareas2 {
+    height: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .cajaTarea2 {
+    height: 12rem;
+    min-width: 100px;
+  }
+}
