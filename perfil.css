@@ -1,9 +1,9 @@
 .cajaPerfil {
-    width: 90%;
-    max-width: 600px;
+    width: 50%;
+    max-width: 400px;
     height: auto;
-    min-height: 640px;
-    margin: 2rem auto;
+    min-height: 450px;
+    margin: 1rem auto;
     position: relative;
     border-radius: 2rem;
     background: radial-gradient(circle at top center,  #0B1326, #2F3D59, #000000);
@@ -15,19 +15,16 @@
 
 .imgPerfil {
     width: 80%;
-    max-width: 350px;
+    max-width: 280px;
     height: auto;
-  position: absolute;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: calc(100% - 175px);
+    bottom: calc(100% - 130px);
     border-radius: 2rem;
     box-shadow: 0 0 20px  #0B1326 ;
-  grid-row: 1/2;
-   
+    grid-row: 1/2;
 }
-
-
 
 .imgPerfil img {
     width: 100%;
@@ -38,21 +35,21 @@
 .nombrePerfil {
     color: white;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: clamp(2rem, 8vw, 3.5rem);
+    font-size: clamp(2rem, 2vw, 2rem);
     font-weight: 600;
     display: flex;
     justify-content: center;
     text-align: center;
-     padding: 0 1rem;
+    padding: 0 1rem;
 }
 
 .textoGithub{
     color:rgba(216, 216, 216, 0.589);
- font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-     font-size: clamp(0.8rem, 3.5vw, 1.5rem);
+    font-size: clamp(0.8rem, 3.5vw, 1.2rem);
 }
 
 .apartadoInfo {
@@ -63,15 +60,13 @@
     grid-row: 2/3;
     flex-direction: column;
     gap: 1.5rem;
-  
-
 }
 
 .textoinfo {
-    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    font-size: clamp(1.2rem, 4vw, 1.2rem);
     color: white;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- margin: 0 0.8rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 0.8rem;
     display: flex;
     align-items: center;
 }
@@ -81,7 +76,7 @@
 }
 
 .textoUbicacion {
-    font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+    font-size: clamp(1.1rem, 3.5vw, 1.1rem);
     color: white;
     justify-content: center;
     display: flex;
@@ -93,44 +88,35 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
-
-
-
-
+/* TABLET */
 @media (max-width: 768px) {
-body{
-    background:(to bottom, #2e1b47, #1a1a2e, #0c0c14); 
-}
-  
+   
+
     .cajaPerfil {
-        min-height: 600px;
-        background: radial-gradient(circle at top center,  #0B1326, #2F3D59, #000000);
-       
+        width: 80%;
+        min-height: 480px;
     }
     
     .imgPerfil {
         width: 70%;
-        bottom: calc(100% - 150px);
+        bottom: calc(100% - 120px);
     }
-    
-  
 }
 
-
+/* MÓVIL */
 @media (max-width: 480px) {
     .cajaPerfil {
-        min-height: 600px;
+        width: 90%;
+        min-height: 400px;
     }
     
     .imgPerfil {
-        width: 65%;
-     
+        width: 60%;
+        bottom: calc(100% - 140px);
     }
     
     .nombrePerfil {
-  
-        font-size: clamp(2.5rem, 7vw, 2.5rem);
+        font-size: clamp(2rem, 6vw, 2.5rem);
     }
     
     .apartadoInfo {
@@ -139,6 +125,3 @@ body{
         margin-top: 1rem;
     }
 }
-
-
-

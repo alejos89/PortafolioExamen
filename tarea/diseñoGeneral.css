@@ -3,9 +3,9 @@
   width: 100%;
   margin-top: 4%;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  padding-bottom: 4rem;
+  padding: 2rem 5rem;
+  box-sizing: border-box;
 }
 
 .apartadoTarea img {
@@ -13,6 +13,9 @@
   width: 60%;
   border-radius: 20px;
   max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .tituloTarea {
@@ -27,6 +30,7 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: rgb(216, 216, 216);
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .descripcionTarea {
@@ -34,9 +38,11 @@
   width: 60%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: white;
-  margin-top: 3%;
-  text-align: center;
+  margin-top: 5%;
+  text-align: left;
   line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tituloLinks, .tituloStaks {
@@ -44,7 +50,10 @@
   color: rgb(252, 144, 144);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin-top: 4%;
-  text-align: center;
+  text-align: left;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .linkTarea {
@@ -57,6 +66,7 @@
   border-radius: 4px;
   display: inline-block;
   margin: 0.3rem;
+  text-align: left;
 }
 
 .linkTarea:hover {
@@ -70,7 +80,12 @@
   gap: 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
 }
 
 .stak {
@@ -82,8 +97,24 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+@media (max-width: 1024px) {
+  .apartadoTarea {
+    padding: 2rem 3rem;
+  }
+  
+  .descripcionTarea,
+  .tituloLinks,
+  .tituloStaks,
+  .listado {
+    width: 80%;
+  }
+}
 
 @media (max-width: 768px) {
+  .apartadoTarea {
+    padding: 2rem 2rem;
+  }
+  
   .apartadoTarea img {
     width: 80%;
   }
@@ -97,24 +128,33 @@
   }
   
   .descripcionTarea {
-    width: 80%;
+    width: 90%;
     font-size: 1.4rem;
   }
   
   .tituloLinks, .tituloStaks {
+    width: 90%;
     font-size: 1.8rem;
-    padding: 1rem;
- 
   }
   
   .linkTarea, .stak {
     font-size: 1.3rem;
   }
+  
+  .listado {
+    width: 90%;
+    padding: 0;
+  }
 }
 
 @media (max-width: 480px) {
+  .apartadoTarea {
+    padding: 1.5rem 3rem;
+   
+  }
+  
   .apartadoTarea img {
-    width: 90%;
+    width: 95%;
   }
   
   .tituloTarea {
@@ -123,28 +163,37 @@
   
   .nombreTarea {
     font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
   
   .descripcionTarea {
-    width: 90%;
+    width: 100%;
     font-size: 1.2rem;
+    margin-top: 3%;
   }
   
   .tituloLinks, .tituloStaks {
+    width: 100%;
     font-size: 1.5rem;
-    padding: 1rem;
+    margin-top: 3%;
   }
   
   .linkTarea, .stak {
     font-size: 1.1rem;
+    padding: 4px 8px;
   }
   
   .listado {
+    width: 100%;
     gap: 1rem;
   }
 }
 
 @media (max-width: 380px) {
+  .apartadoTarea {
+    padding: 1rem 0.5rem;
+  }
+  
   .tituloTarea {
     font-size: 1.8rem;
   }
@@ -163,6 +212,5 @@
   
   .linkTarea, .stak {
     font-size: 1rem;
-    padding: 4px 8px;
   }
 }

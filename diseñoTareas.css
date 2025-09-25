@@ -1,11 +1,13 @@
 .contenedorTareas {
     display: grid;
     width: auto;
-    height: auto;
+    height: 55rem;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1.8rem;
-    padding: 2rem 1rem;   
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem 10rem;   
+    margin: 5rem 0;
+   
 }
 
 .cajaTarea1 {
@@ -28,15 +30,19 @@
 @media (max-width: 768px) {
     .contenedorTareas {
         gap: 1.2rem;
-        padding: 1.5rem 0.8rem;
-        height: 18rem;
+        padding: 1.5rem 2rem;
+        height: 50rem;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
+
+    
 }
 
 @media (max-width: 480px) {
     .contenedorTareas {
         gap: 0.8rem;
-        padding: 1rem 0.5rem;
+        padding: 1rem 1rem;
     }
     
     .cajaTarea1 {
